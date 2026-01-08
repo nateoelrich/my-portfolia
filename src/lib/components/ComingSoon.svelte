@@ -1,0 +1,3 @@
+<div class="min-h-screen flex items-center justify-center bg-gray-100 font-mono text-gray-800">
+  comming soon...
+</div>

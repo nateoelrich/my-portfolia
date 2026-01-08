@@ -59,8 +59,8 @@
 <div class="containerpx-4 py-20 bg-orange-400">
   <div class="max-w-4xl mx-auto">
     <h2 class="text-4xl font-bold mb-12 text-center">About Me</h2>
-    <div class="font-mono font-thin">
-        <p class="mb-6">
+    <div class="font-mono font-thin opacity-60">
+        <p class="mb-6 0">
             &emsp;
             <em>Before I was a software engineer, I was a poor kid, high school dropout, and a cold caller getting chewed out for minimum wage. Hitting my rock bottom at 17 years old
                 was the catalyst I needed to get an education and turn my life around. Without any support from my family, I earned my GED, worked multiple jobs, and eventually enrolled in
