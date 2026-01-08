@@ -53,10 +53,11 @@
 </div>
 
 <!-- About Section -->
-<div class="container mx-auto px-4 py-20 bg-orange-400">
-  <div class="max-w-4xl mx-auto px-4">
-    <h2 class="text-4xl font-bold mb-12 text-center">About Me</h2>
-    <div class="font-mono font-thin opacity-60">
+<div class="bg-orange-400 py-20">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-12 text-center">About Me</h2>
+      <div class="font-mono font-thin opacity-60">
         <p class="mb-6 0">
             &emsp;
             <em>Before I was a software engineer, I was a poor kid, high school dropout, and a cold caller getting chewed out for minimum wage. Hitting my rock bottom at 17 years old
@@ -83,6 +84,7 @@
                 around me, because I understand that in order to truly succeed, we must lift others up along the way.
             </em>
         </p>
+      </div>
     </div>
   </div>
 </div>
