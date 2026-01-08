@@ -18,7 +18,7 @@
     'Tailwind',
     'Docker',
     'Kubernetes',
-    'Azure Cloud Services',
+    'Azure Cloud',
     'Git',
     'CI/CD',
     'WPF',
