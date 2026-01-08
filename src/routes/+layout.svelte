@@ -33,7 +33,7 @@
 </nav>
 
 <!-- Main content with top padding to account for fixed nav -->
-<div class="pt-16">
+<div class="pt-16 font-mono">
   {@render children()}
 </div>
 

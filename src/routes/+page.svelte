@@ -29,15 +29,11 @@
     'Documentation',
     'Team Leadership',
     'Mentorship',
-    'Dad Jokes',
-    'Star Wars',
-    'Life Long Sutdent',
-    'Multi-instrumentalist'
   ];
 </script>
 
 <!-- Hero Section -->
-<div class="min-h-screen flex items-center justify-center bg-linear-to-br from-orange-400 via-gray-500 to-indigo-900">
+<div class="min-h-screen flex items-center justify-center bg-linear-to-br from-orange-400 via-gray-500 to-indigo-900 font-mono">
   <div class="text-center text-white px-4">
     <h1 class="text-5xl md:text-7xl font-bold mb-6">
       Hi, I'm Nate!
@@ -60,20 +56,36 @@
 </div>
 
 <!-- About Section -->
-<div class="containerpx-4 py-20 bg-amber-500 opacity-60">
+<div class="containerpx-4 py-20 bg-orange-400">
   <div class="max-w-4xl mx-auto">
-    <h2 class="text-4xl font-bold mb-8 text-center">About Me</h2>
-    <div class="prose prose-lg dark:prose-invert mx-auto">
-      <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
-        I'm a passionate software engineer with a decade of experience building scalable, 
-        performant applications. I specialize in modern web technologies and have a proven 
-        track record of delivering high-quality solutions.
-      </p>
-      <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
-        Throughout my career, I've worked with diverse teams and technologies, from frontend 
-        frameworks to backend systems. I'm always excited to tackle new challenges and 
-        continuously learn new technologies.
-      </p>
+    <h2 class="text-4xl font-bold mb-12 text-center">About Me</h2>
+    <div class="font-mono font-thin">
+        <p class="mb-6">
+            &emsp;
+            <em>Before I was a software engineer, I was a poor kid, high school dropout, and a cold caller getting chewed out for minimum wage. Hitting my rock bottom at 17 years old,
+                was the catalyst I needed to get an education and turn my life around. Without any support from my family, I earned my GED, worked multiple jobs, and eventually enrolled in
+                Clover Park Technical College to study Software Development. While there I began my training as a leader in student governmet and since entering the workforce in 2013, 
+                I've built a successful career in software as a well-rounded professional. I continued my education through self-study, online courses, and obtaining my BA in IT-Software Development 
+                from Western Governors University in 2018.
+            </em>
+        </p>
+        <p class="mb-6">
+            &emsp;
+            <em>
+                Throughout my career, I've worked with many different types of companies, technoglogies, and people. I've been in the private sector most recently, but my career started
+                with a local reginal agency. Most of my experience has been creating web based solutions but, I've become proficient in both frontend and backend development, allowing me to 
+                build software that delivers the best products for the business and those using it. My focus is understanding the product and the users who use them in order to create
+                the most valuable solutions.
+            </em>
+        </p>
+        <p class="mb-6">
+            &emsp;
+            <em>
+                My passion has always makes a positive impact in the lives of others with the work that I do and the people I work with. Technology has the power to change lives and improve the world and I recognize
+                my role in that as a software engineer. Being a leader means helping others grow and succeed, and I take that responsibility seriously. I'm committed to the success of those 
+                around me, becuase I understand that in order to truly succeed, we must lift others up along the way.
+            </em>
+        </p>
     </div>
   </div>
 </div>
