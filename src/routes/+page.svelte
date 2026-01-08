@@ -53,8 +53,8 @@
 </div>
 
 <!-- About Section -->
-<div class="containerpx-4 py-20 bg-orange-400">
-  <div class="max-w-4xl mx-auto">
+<div class="container mx-auto px-4 py-20 bg-orange-400">
+  <div class="max-w-4xl mx-auto px-4">
     <h2 class="text-4xl font-bold mb-12 text-center">About Me</h2>
     <div class="font-mono font-thin opacity-60">
         <p class="mb-6 0">
