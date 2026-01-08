@@ -41,9 +41,6 @@
      <h3 class="text-2xl md:text-4xl font-bold mb-6">
       Let's Build Something Great Together
     </h3>
-    <p class="text-xl md:text-2xl mb-8 text-gray-100">
-      Dynamic Software Engineer and Emerging People Leader
-    </p>
     <div class="flex gap-4 justify-center">
       <a href="/experience" class="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
         View My Experience
