@@ -30,7 +30,7 @@
 <section 
   bind:this={heroSection} 
   aria-labelledby="hero-heading"
-  class="min-h-screen flex items-center justify-center bg-linear-to-br from-orange-400 via-gray-500 to-indigo-900 font-mono"
+  class="h-[90vh] flex flex-col items-center justify-center bg-linear-to-br from-orange-400 via-gray-500 to-indigo-900 font-mono relative"
 >
   <div class="text-center text-white px-4 max-w-4xl">
     <h1 id="hero-heading" class="text-5xl md:text-7xl font-bold mb-6 {heroVisible ? 'hero-title-in' : 'opacity-0'}">
@@ -53,6 +53,16 @@
         See Projects
       </a>
     </nav>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 {heroVisible ? 'hero-buttons-in' : 'opacity-0'}">
+    <div class="flex flex-col items-center gap-2 text-white/80 hover:text-white transition-colors cursor-pointer animate-bounce">
+      <span class="text-sm font-medium">scroll for about me</span>
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
   </div>
 </section>
 
