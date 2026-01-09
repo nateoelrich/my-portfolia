@@ -67,7 +67,7 @@
   </div>
 
   <!-- Scroll indicator -->
-  <ScrollIndicator visible={heroVisible} text="scroll for more about me..." />
+  <ScrollIndicator visible={heroVisible} text="more about me..." />
 </section>
 
 <style>
