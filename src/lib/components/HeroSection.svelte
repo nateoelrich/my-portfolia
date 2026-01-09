@@ -31,7 +31,7 @@
 <section 
   bind:this={heroSection} 
   aria-labelledby="hero-heading"
-  class="hero-background h-[88vh] flex flex-col items-center justify-center font-mono relative overflow-hidden"
+  class="hero-background h-[90vh] flex flex-col items-center justify-center font-mono relative overflow-hidden"
 >
   <!-- Animated gradient background -->
   <div class="hero-gradient"></div>
@@ -65,6 +65,9 @@
       </a>
     </nav>
   </div>
+
+  <!-- Scroll indicator -->
+  <ScrollIndicator visible={heroVisible} text="scroll for more about me..." />
 </section>
 
 <style>
