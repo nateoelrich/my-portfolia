@@ -1,0 +1,121 @@
+import type { Project } from '$lib/types/project';
+
+/**
+ * Collection of project entries
+ */
+export const projects: Project[] = [
+  {
+    title: 'Personal Portfolio Website',
+    client: 'Myself',
+    duration: 'current',
+    techStack: ['TypeScript', "Svelte", 'TailwindCSS', 'GitHub Pages', 'AI Agent Assistance'],
+    description: 'The site you\'re looking at right now! A personal portfolio website built to showcase my work experience, projects, and blog posts. Developed using Svelte for a fast and responsive user experience, styled with TailwindCSS for modern design aesthetics, and hosted on GitHub Pages for easy accessibility and deployment. I wanted to use AI as much or as little as I wanted with this project to gain some practical experiance outside of work.',
+    liveUrl: '/',
+    githubUrl: 'https://github.com/nateoelrich/my-portfolia',
+  },
+  {
+    title: 'MFA implementation',
+    client: 'Alaska Airlines',
+    duration: 'current',
+    techStack: ['TypeScript', "C#", 'Auth0'],
+    description: 'Implementing multi-factor authentication across several customer and internal facing applications to enhance security posture. This project involves integrating MFA solutions with existing authentication systems, ensuring a smooth user experience while significantly reducing the risk of unauthorized access.',
+  },
+  {
+    title: 'Internal Auth Package Development',
+    client: 'Alaska Airlines',
+    duration: '2 months',
+    techStack: ['TypeScript'],
+    description: 'Generated reusable authentication packages for internal use across multiple teams within the company. These packages streamlined the implementation of authentication mechanisms, ensuring consistency and security in user access management across various applications and services. Also documented the packages to facilitate adoption and ease of use by other developers.',
+  },
+  {
+    title: 'Atmos Account Overview Micro-site',
+    client: 'Alaska Airlines',
+    duration: '5 months',
+    techStack: ['TypeScript', 'Svelte', 'C#', 'MongoDB', 'GraphQL', 'Kubernetes via ArgoCD'],
+    description: 'A mobile first micro-site used by millions of Atmos Rewards members as a landing page to view points status and manage their accounts. Part of brand refresh and modernization effort for the Atmos brand. Worked closely with designers to implement responsive designs and ensure a seamless user experience across devices.',
+    liveUrl: 'https://alaskaair.com/atmosrewards/account/overview',
+    githubUrl: '',
+  },
+  {
+    title: 'Profile Data Cleanup and Migration Tool',
+    client: 'Alaska Airlines',
+    duration: '3 months',
+    techStack: ['C#', 'Hangfire', 'MongoDB', 'GraphQL', 'Azure Cloud'],
+    description: 'A backend tool designed to clean up and migrate customer profile data from legacy systems to a new unified platform. This tool significantly reduced data processing times from weeks to days, enhancing operational efficiency and setting a precedent for future data migration projects within the company.',
+  },
+  {
+    title: 'Web based video and conversation platform',
+    client: 'Imperative',
+    duration: '12 months',
+    techStack: ['C#', 'VueJS', 'PostgreSQL', 'REST API', 'Azure Cloud', 'SignalR'],
+    description: 'A series of web applications and services used to create connections, schedule video calls, and facilitate conversations between mentors and mentees. The platform includes features such as video conferencing, chat functionality, and session scheduling, all designed to enhance the mentoring experience and foster meaningful connections.',
+  },
+  {
+    title: 'Onboarding System',
+    client: 'Imperative',
+    duration: '3 months',
+    techStack: ['C#', 'VueJS', 'PostgreSQL', 'REST API', 'Azure Cloud'],
+    description: 'A web-bassed onbarding systems that streamlined the process of gathering member information, setting up profiles / authentication, and guiding new users through initial steps. The system improved user experience and operational efficiency by automating key onboarding tasks and providing a user-friendly interface.',
+  },
+  {
+    title: 'Buy and sell platform',
+    client: 'QuoteWizard',
+    duration: '2 months',
+    techStack: ['C#', 'Azure Event Grid', 'Azure Functions', 'Cosmos DB', 'Azure Cloud'],
+    description: 'A backend platform that facilitated the buying and selling of insurance leads between QuoteWizard and agents. The system was designed to handle high volumes of transactions efficiently, ensuring timely delivery of leads while maintaining data integrity and security throughout the process.',
+  },
+  {
+    title: 'Admin System Rebuild',
+    client: 'QuoteWizard',
+    duration: '8 months',
+    techStack: ['C#', 'RestAPI', 'VueJS', 'Entity Framework', 'MSSQL', 'Azure Cloud'],
+    description: 'An admin system rebuild that replaced legacy systems with modern frameworks to enhance usability and maintainability. The new system provided administrators with improved tools for managing their lead buying accounts and channels, ultimately leading to increased efficiency and better decision-making capabilities.',
+  },
+
+  {
+    title: 'Air Quality Visualization Tool',
+    client: 'Puget Sound Clean Air Agency',
+    duration: '6 months',
+    techStack: ['C#', 'ASP.NET', 'Entity Framework', 'MSSQL', 'On Premise'],
+    description: 'Still in use today after more than a decade!A web application that visualized air quality data collected by the agency. The tool provided interactive charts and maps to help users understand air pollution trends and patterns, supporting public awareness and scientific research efforts.',
+    liveUrl: 'https://secure.pscleanair.org/airgraphing',
+  },
+  {
+    title: 'Air Quality Network Map',
+    client: 'Puget Sound Clean Air Agency',
+    duration: '3 months',
+    techStack: ['C#', 'ASP.NET', 'Entity Framework', 'MSSQL', 'WPF'],
+    description: 'A single page app that displayed an interactive map of air quality monitoring stations throughout the Puget Sound region. The application allowed users to view real-time air quality data, historical trends, and station information, enhancing public access to environmental data and supporting community engagement in air quality issues.',
+    liveUrl: 'https://secure.pscleanair.org/AirQuality/NetworkMap',
+  },
+  {
+    title: 'Air Quality Visualization Tool - Wind Rose Edition',
+    client: 'Puget Sound Clean Air Agency',
+    duration: '1 months',
+    techStack: ['C#', 'ASP.NET', 'Entity Framework', 'MSSQL', 'On Premise'],
+    description: 'Also still kicking, this specialized version of the air quality visualization tool focused on wind rose diagrams to represent wind speed and direction data. The application aided in analyzing how wind patterns influenced air quality, providing valuable insights for environmental monitoring and decision-making.',
+    liveUrl: 'https://secure.pscleanair.org/windrose',
+  },
+  {
+    title: 'Air Quality Communication Tools',
+    client: 'Puget Sound Clean Air Agency',
+    duration: '3 months',
+    techStack: ['C#', 'ASP.NET', 'Entity Framework', 'MSSQL', 'WPF'],
+    description: 'A series of web components and associated desktop apps to manage them. These tools allows agency staff to create, edit, and publish air quality communication materials efficiently. The system streamlined the content management process, ensuring timely dissemination of important air quality information to the public and stakeholders.',
+    liveUrl: 'https://pscleanair.gov/',
+  },
+  {
+    title: 'Internal Agency Timesheet Application',
+    client: 'Puget Sound Clean Air Agency',
+    duration: '6 months',
+    techStack: ['C#', 'WPF', 'Entity Framework', 'MSSQL'],
+    description: 'A desktop application that replaced the agency\'s legacy timesheet system. The new application provided employees with an intuitive interface to log their work hours, submit timesheets, and track payroll information, improving accuracy and efficiency in time management processes.',
+  },
+  {
+    title: 'Wood Smoke Reduction Program Web Form and Administration Tool',
+    client: 'Puget Sound Clean Air Agency',
+    duration: '6 months',
+    techStack: ['C#', 'ASP.NET', 'Entity Framework', 'MSSQL'],
+    description: 'A set of web applications to support the agency\'s wood smoke reduction initiatives. The web form allowed residents to apply for wood stove change-out programs, while the administration tool enabled agency staff to manage applications, track program progress, and generate reports, facilitating effective program implementation and monitoring.',
+  },
+];
