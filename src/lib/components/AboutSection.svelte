@@ -1,6 +1,6 @@
-<section aria-labelledby="about-heading" class="py-20 bg-orange-400">
+<section aria-labelledby="about-heading" class="pt-8 pb-20 bg-orange-400">
   <div class="max-w-4xl mx-auto px-4">
-    <h2 id="about-heading" class="text-4xl font-bold mb-12 text-center">About Me</h2>
+    <h2 id="about-heading" class="text-4xl font-bold mb-4 text-center">About Me</h2>
     <div class="opacity-60 flex flex-col gap-6">
       <p class="text-base md:text-lg indent-8">
         Before I was a software engineer, I was a poor kid, high school dropout, and a cold caller getting chewed out for minimum wage. Hitting my rock bottom at 17 years old
