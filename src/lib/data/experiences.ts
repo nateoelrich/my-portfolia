@@ -26,7 +26,7 @@ export const workExperiences: WorkExperience[] = [
     responsibilities: [
       'Developed critical onboarding system that enhanced the user experience and operational efficiency',
       'Enhanced web-based video and conversation platform using lightweight front end and robust messaging service',
-      'Replaced legacy websites with modernized micro-sites and frameworks to enhance the businesses\' ability to pivot',
+      'Replaced legacy websites with modernized micro-sites and frameworks to enhance the business\'s ability to pivot',
     ],
   },
   {
@@ -58,7 +58,7 @@ export const workExperiences: WorkExperience[] = [
     company: 'Puget Sound Clean Air',
     startDate: 'June 2013',
     endDate: 'August 2018',
-    employmentType: 'Contract toFull-time',
+    employmentType: 'Contract to Full-time',
     responsibilities: [
       'Modernized the agency\'s web applications for use by public and agency scientists – many of these still in use today',
       'Replaced legacy desktop app for employee timesheets and payroll with a WPF desktop app',
