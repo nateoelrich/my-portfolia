@@ -37,7 +37,7 @@
 		{#if $page.url.pathname !== '/'}
 			<!-- Navigation Header -->
 			<header class="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-md border-b border-white/10">
-				<nav class="container mx-auto px-4 py-4 max-w-384">
+				<nav class="container mx-auto px-4 py-4 max-w-350">
 					<div class="flex items-center justify-between">
 						<!-- Logo -->
 						<a href="/" class="flex items-center hover:opacity-80 transition-opacity">
@@ -127,12 +127,12 @@
 	/* Checkerboard background for ultra-wide screens */
 	.checkerboard-bg {
 		min-height: 100vh;
-		background-color: #1a1a1a;
+		background-color: #2a2a2a;
 		background-image: 
-			linear-gradient(45deg, #2d2d2d 25%, transparent 25%),
-			linear-gradient(-45deg, #2d2d2d 25%, transparent 25%),
-			linear-gradient(45deg, transparent 75%, #2d2d2d 75%),
-			linear-gradient(-45deg, transparent 75%, #2d2d2d 75%),
+			linear-gradient(45deg, #4a4a4a 25%, transparent 25%),
+			linear-gradient(-45deg, #4a4a4a 25%, transparent 25%),
+			linear-gradient(45deg, transparent 75%, #4a4a4a 75%),
+			linear-gradient(-45deg, transparent 75%, #4a4a4a 75%),
 			radial-gradient(circle at 20% 30%, rgba(251, 146, 60, 0.15) 0%, transparent 50%),
 			radial-gradient(circle at 80% 70%, rgba(251, 146, 60, 0.12) 0%, transparent 50%);
 		background-size: 40px 40px, 40px 40px, 40px 40px, 40px 40px, 100% 100%, 100% 100%;
@@ -141,7 +141,7 @@
 
 	/* Content wrapper with max width */
 	.content-max-width {
-		max-width: 1536px;
+		max-width: 1400px;
 		margin: 0 auto;
 		background: white;
 		box-shadow: 0 0 60px rgba(0, 0, 0, 0.5), 0 0 80px rgba(251, 146, 60, 0.2);
