@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { afterNavigate } from '$app/navigation';
 	import favicon from '$lib/assets/favicon.ico';
+	import { navigationLinks } from '$lib/data/navigation-links';
 
 	interface Props {
 		currentPath: string;
@@ -17,13 +18,6 @@
 	const toggleMobileMenu = () => {
 		mobileMenuOpen = !mobileMenuOpen;
 	};
-
-	const navLinks = [
-		{ href: '/', label: 'Home' },
-		{ href: '/experience', label: 'Experience' },
-		{ href: '/projects', label: 'Projects' },
-		{ href: '/personal', label: 'Personal' },
-	];
 </script>
 
 <header class="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-md border-b border-white/10">
@@ -36,7 +30,7 @@
 
 			<!-- Desktop Navigation -->
 			<div class="hidden md:flex gap-6">
-				{#each navLinks as link}
+				{#each navigationLinks as link}
 					<a 
 						href={link.href} 
 						class="text-white hover:text-orange-400 transition-colors font-medium"
@@ -72,7 +66,7 @@
 		{#if mobileMenuOpen}
 			<div class="md:hidden mt-4 pb-4 border-t border-white/10 pt-4">
 				<div class="flex flex-col gap-4">
-					{#each navLinks as link}
+					{#each navigationLinks as link}
 						<a 
 							href={link.href} 
 							class="text-white hover:text-orange-400 transition-colors font-medium py-2"
