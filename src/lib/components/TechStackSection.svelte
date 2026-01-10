@@ -9,7 +9,7 @@
 <section 
   use:intersectionObserver={{ onIntersect: () => (techStackVisible = true) }}
   aria-labelledby="tech-stack-heading"
-  class="py-20 bg-gradient-portfolio-indigo"
+  class="py-20 bg-linear-to-br from-indigo-900 via-gray-500 to-orange-400"
 >
   <div class="container mx-auto px-4">
     <h2 id="tech-stack-heading" class="text-4xl font-bold mb-12 text-center">Tech Stack</h2>

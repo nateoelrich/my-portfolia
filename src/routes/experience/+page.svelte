@@ -13,7 +13,7 @@
 <PageLayout 
   title="Work Experience" 
   description="My professional journey and key contributions"
-  gradient="indigo"
+  gradientFrom="indigo-900"
 >
   {#each workExperiences as experience}
     <ExperienceCard {experience} />

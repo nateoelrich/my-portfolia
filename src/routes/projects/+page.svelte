@@ -13,7 +13,7 @@
 <PageLayout 
   title="Projects" 
   description="Notable projects and technical achievements"
-  gradient="purple"
+  gradientFrom="purple-900"
 >
   {#each projects as project}
     <ProjectCard {project} />
