@@ -30,11 +30,10 @@
 		{#if currentPath !== '/'}
 			<Navigation {currentPath} />
 		{/if}
-
-		<!-- Main content with top padding to account for fixed nav -->
-		<div class="font-mono" class:pt-16={currentPath !== '/'}>
+    
+		<main class="font-mono" class:pt-16={currentPath !== '/'}>
 			{@render children()}
-		</div>
+		</main>
 
 		<Footer />
 	</div>
