@@ -2,6 +2,7 @@
 	import { afterNavigate } from '$app/navigation';
 	import favicon from '$lib/assets/favicon.ico';
 	import { navigationLinks } from '$lib/data/navigation-links';
+	import ExternalLink from './ExternalLink.svelte';
 
 	interface Props {
 		currentPath: string;
@@ -31,13 +32,10 @@
 			<!-- Desktop Navigation -->
 			<div class="hidden md:flex gap-6">
 				{#each navigationLinks as link}
-					<a 
-						href={link.href} 
-						class="text-white hover:text-orange-400 transition-colors font-medium"
-						class:text-orange-400={currentPath === link.href}
-					>
-						{link.label}
-					</a>
+					<ExternalLink 
+						{link}
+						class="text-white hover:text-orange-400 transition-colors font-medium {currentPath === link.href ? 'text-orange-400' : ''}"
+					/>
 				{/each}
 			</div>
 
@@ -67,13 +65,10 @@
 			<div class="md:hidden mt-4 pb-4 border-t border-white/10 pt-4">
 				<div class="flex flex-col gap-4">
 					{#each navigationLinks as link}
-						<a 
-							href={link.href} 
-							class="text-white hover:text-orange-400 transition-colors font-medium py-2"
-							class:text-orange-400={currentPath === link.href}
-						>
-							{link.label}
-						</a>
+						<ExternalLink 
+							{link}
+							class="text-white hover:text-orange-400 transition-colors font-medium py-2 {currentPath === link.href ? 'text-orange-400' : ''}"
+						/>
 					{/each}
 				</div>
 			</div>

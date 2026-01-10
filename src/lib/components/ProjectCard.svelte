@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { Project } from '$lib/types/project';
+  import Card from './Card.svelte';
 
   interface Props {
     project: Project;
@@ -8,7 +9,7 @@
   let { project }: Props = $props();
 </script>
 
-<article class="bg-white/10 backdrop-blur rounded-2xl p-6 md:p-8 border border-white/20 hover:border-purple-400/50 transition-all duration-300 hover:shadow-xl">
+<Card hoverColor="purple">
   <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4 gap-2">
     <div class="flex-1">
       <h3 class="text-2xl font-bold text-white mb-2">{project.title}</h3>
@@ -56,4 +57,4 @@
       </span>
     {/each}
   </div>
-</article>
+</Card>

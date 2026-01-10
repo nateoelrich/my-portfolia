@@ -1,0 +1,33 @@
+/**
+ * Technical skills and competencies
+ */
+export const techStack: readonly string[] = [
+  'C#',
+  '.NET',
+  'SQL',
+  'PostgreSQL',
+  'MongoDB',
+  'Rest APIs',
+  'GraphQL',
+  'JavaScript',
+  'TypeScript',
+  'Svelte',
+  'React',
+  'VueJS',
+  'HTML',
+  'CSS',
+  'Tailwind',
+  'Docker',
+  'Kubernetes',
+  'Azure Cloud',
+  'Git',
+  'CI/CD',
+  'WPF',
+  'ASP.Net',
+  'TDD',
+  'AI Code Generation',
+  'Agile',
+  'Documentation',
+  'Team Leadership',
+  'Mentorship',
+] as const;

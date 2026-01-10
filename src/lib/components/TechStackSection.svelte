@@ -1,68 +1,15 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
-
-  const ANIMATION_THRESHOLD = 0.25;
-  const TECH_STACK_ANIMATION_DELAY = 0.05;
-
-  const techStack = [
-    'C#',
-    '.NET',
-    'SQL',
-    'PostgreSQL',
-    'MongoDB',
-    'Rest APIs',
-    'GraphQL',
-    'JavaScript',
-    'TypeScript',
-    'Svelte',
-    'React',
-    'VueJS',
-    'HTML',
-    'CSS',
-    'Tailwind',
-    'Docker',
-    'Kubernetes',
-    'Azure Cloud',
-    'Git',
-    'CI/CD',
-    'WPF',
-    'ASP.Net',
-    'TDD',
-    'AI Code Generation',
-    'Agile',
-    'Documentation',
-    'Team Leadership',
-    'Mentorship',
-  ] as const;
+  import { TECH_STACK_ANIMATION_DELAY } from '$lib/constants/animation';
+  import { techStack } from '$lib/data/tech-stack';
+  import { intersectionObserver } from '$lib/actions/intersectionObserver';
 
   let techStackVisible = $state(false);
-  let techStackSection: HTMLElement;
-
-  onMount(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            techStackVisible = true;
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: ANIMATION_THRESHOLD }
-    );
-
-    if (techStackSection) observer.observe(techStackSection);
-
-    return () => {
-      if (techStackSection) observer.unobserve(techStackSection);
-    };
-  });
 </script>
 
 <section 
-  bind:this={techStackSection} 
+  use:intersectionObserver={{ onIntersect: () => (techStackVisible = true) }}
   aria-labelledby="tech-stack-heading"
-  class="py-20 bg-linear-to-br from-indigo-900 via-gray-500 to-orange-400"
+  class="py-20 bg-gradient-portfolio-indigo"
 >
   <div class="container mx-auto px-4">
     <h2 id="tech-stack-heading" class="text-4xl font-bold mb-12 text-center">Tech Stack</h2>

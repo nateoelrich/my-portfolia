@@ -1,35 +1,12 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import ScrollIndicator from './ScrollIndicator.svelte';
-
-	const ANIMATION_THRESHOLD = 0.25;
+	import { intersectionObserver } from '$lib/actions/intersectionObserver';
 
 	let heroVisible = $state(false);
-	let heroSection: HTMLElement;
-
-	onMount(() => {
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						heroVisible = true;
-						observer.unobserve(entry.target);
-					}
-				});
-			},
-			{ threshold: ANIMATION_THRESHOLD }
-		);
-
-		if (heroSection) observer.observe(heroSection);
-
-		return () => {
-			if (heroSection) observer.unobserve(heroSection);
-		};
-	});
 </script>
 
 <section
-	bind:this={heroSection}
+	use:intersectionObserver={{ onIntersect: () => (heroVisible = true) }}
 	aria-labelledby="hero-heading"
 	class="hero-background relative flex h-[90vh] flex-col items-center justify-center overflow-hidden font-mono"
 >
