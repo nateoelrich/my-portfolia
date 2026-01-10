@@ -1,14 +1,13 @@
 <script lang="ts">
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.ico';
-	import { page } from '$app/stores';
+	import { afterNavigate } from '$app/navigation';
 
-	let { children } = $props();
+	let { children, data } = $props();
 	let mobileMenuOpen = $state(false);
-
-	// Determine if we're on the home page
-	$effect(() => {
-		// Close mobile menu when route changes
+  
+	// Close mobile menu after navigation completes
+	afterNavigate(() => {
 		mobileMenuOpen = false;
 	});
 
@@ -22,6 +21,17 @@
 		{ href: '/projects', label: 'Projects' },
 		{ href: '/personal', label: 'Personal' },
 	];
+
+	// Track current path for active link styling
+	let currentPath = $state('/');
+	if (typeof window !== 'undefined') {
+		currentPath = window.location.pathname;
+	}
+
+	// Update currentPath after navigation
+	afterNavigate((navigation) => {
+		currentPath = navigation.to?.url.pathname || '/';
+	});
 </script>
 
 <svelte:head>
@@ -34,7 +44,7 @@
 <div class="checkerboard-bg">
 	<!-- Content wrapper with max width -->
 	<div class="content-max-width">
-		{#if $page.url.pathname !== '/'}
+		{#if currentPath !== '/'}
 			<!-- Navigation Header -->
 			<header class="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-md border-b border-white/10">
 				<nav class="container mx-auto px-4 py-4 max-w-350">
@@ -50,7 +60,7 @@
 								<a 
 									href={link.href} 
 									class="text-white hover:text-orange-400 transition-colors font-medium"
-									class:text-orange-400={$page.url.pathname === link.href}
+									class:text-orange-400={currentPath === link.href}
 								>
 									{link.label}
 								</a>
@@ -86,7 +96,7 @@
 									<a 
 										href={link.href} 
 										class="text-white hover:text-orange-400 transition-colors font-medium py-2"
-										class:text-orange-400={$page.url.pathname === link.href}
+										class:text-orange-400={currentPath === link.href}
 									>
 										{link.label}
 									</a>
@@ -99,7 +109,7 @@
 		{/if}
 
 		<!-- Main content with top padding to account for fixed nav -->
-		<div class="font-mono" class:pt-16={$page.url.pathname !== '/'}>
+		<div class="font-mono" class:pt-16={currentPath !== '/'}>
 			{@render children()}
 		</div>
 
