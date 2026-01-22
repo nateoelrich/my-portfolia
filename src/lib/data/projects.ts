@@ -14,13 +14,6 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/nateoelrich/my-portfolia',
   },
   {
-    title: 'MFA Implementation',
-    client: 'Alaska Airlines',
-    duration: 'Current',
-    techStack: ['TypeScript', 'C#', 'Auth0'],
-    description: 'Implementing multi-factor authentication across several customer-facing and internal-facing applications to enhance security posture. This project involves integrating MFA solutions with existing authentication systems, ensuring a smooth user experience while significantly reducing the risk of unauthorized access.',
-  },
-  {
     title: 'Internal Auth Package Development',
     client: 'Alaska Airlines',
     duration: '2 months',
