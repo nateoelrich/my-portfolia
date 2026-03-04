@@ -13,7 +13,7 @@
 
 <SEO 
 	title="Fat Unc Studios | Recording Studio"
-	description="A recording space for liberal, gay, and weird artists who refuse to be silenced. Professional recording at $40/hr for bands, $20/hr for solo artists."
+	description="A recording space socially progressive, LGBTQ+, and creatively nonconforming artists who refuse to be silenced. Professional recording at $40/hr for bands, $20/hr for solo artists."
 />
 
 <div class="studio-page">
@@ -35,14 +35,38 @@
 		<div class="hero-background-pattern"></div>
 	</section>
 
-	<!-- Mission Statement Section -->
+	<!-- Refined Mission Section -->
+	<section class="refined-mission-section">
+		<div class="container">
+			<div class="refined-mission-box">
+				<div class="refined-mission-label">Mission Statement</div>
+				<p class="refined-mission-text">Fat Unc Studios exists to provide accessible, affirming recording space for socially progressive and LGBTQ+ artists resisting cultural conformity and rising fascism. We reject extractive industry models that prioritize profit and polish over authenticity and community. Our studio lowers financial and psychological barriers to creation, prioritizing raw expression, mutual respect, and creative freedom over perfectionism. We are building an underground alternative where bold voices can create work that feels honest, urgent, and culturally necessary.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Manifesto Section -->
 	<section class="mission-section" use:intersectionObserver={{ onIntersect: () => (missionVisible = true) }}>
 		<div class="container">
 			<div class="mission-content">
-				<h2 class="section-title">{studioInfo.mission.title}</h2>
-				<div class="mission-statement">
-					<p>{studioInfo.mission.statement}</p>
-				</div>
+				<h2 class="section-title">MANIFESTO</h2>
+				<div class="mission-statement">Music should have teeth.
+Studios should feel safe.
+Art should not bow to fascism, algorithms, or corporate gatekeepers.
+
+Fat Unc Studios is a scrappy, underground recording space for socially progressive and LGBTQ+ artists who refuse to sand down their edges.
+
+We are not here for perfect takes.
+We are here for honest ones.
+
+We resist cultural conformity, rising authoritarianism, and the industry pressure to make everything clean, quiet, and compliant.
+
+We build sessions rooted in respect, experimentation, and community.
+Lower barriers. Fewer rules. More truth.
+
+Raw over polished.
+Bold over marketable.
+Authentic over safe-for-the-algorithm.</div>
 			</div>
 		</div>
 	</section>
@@ -333,13 +357,56 @@
 		border: 3px solid var(--studio-red);
 		box-shadow: 8px 8px 0 var(--studio-black);
 		transform: rotate(-0.5deg);
+		font-family: var(--font-condensed);
+		font-size: clamp(0.95rem, 2vw, 1.2rem);
+		font-weight: 400;
+		line-height: 1.8;
+		color: var(--studio-white);
+		white-space: pre-line;
 	}
 
-	.mission-statement p {
-		font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-		line-height: 1.7;
+	/* Refined Mission Section */
+	.refined-mission-section {
+		background: var(--studio-black);
+		border-top: 4px solid var(--studio-yellow);
+		border-bottom: 4px solid var(--studio-yellow);
+	}
+
+	.refined-mission-box {
+		max-width: 900px;
+		margin: 0 auto;
+		background: var(--studio-dark-gray);
+		border: 4px solid var(--studio-yellow);
+		padding: 3rem;
+		position: relative;
+		box-shadow: 12px 12px 0 var(--studio-gray);
+	}
+
+	.refined-mission-label {
+		position: absolute;
+		top: -1.5rem;
+		left: 2rem;
+		background: var(--studio-red);
+		color: var(--studio-white);
+		font-family: var(--font-condensed);
+		font-size: 1.2rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		padding: 0.5rem 1.5rem;
+		border: 3px solid var(--studio-yellow);
+		box-shadow: 4px 4px 0 var(--studio-black);
+		transform: rotate(-2deg);
+	}
+
+	.refined-mission-text {
+		font-family: var(--font-body);
+		font-size: clamp(1rem, 2vw, 1.25rem);
+		font-weight: 400;
+		line-height: 1.9;
 		color: var(--studio-white);
 		margin: 0;
+		text-align: justify;
 	}
 
 	/* Rates Section */
@@ -575,6 +642,20 @@
 
 		.mission-statement {
 			padding: 2rem;
+		}
+
+		.refined-mission-box {
+			padding: 2rem;
+		}
+
+		.refined-mission-label {
+			font-size: 1rem;
+			padding: 0.4rem 1rem;
+			left: 1rem;
+		}
+
+		.refined-mission-text {
+			text-align: left;
 		}
 
 		.rates-grid {

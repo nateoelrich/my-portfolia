@@ -11,13 +11,13 @@ export interface Equipment {
 
 export const studioInfo = {
 	name: 'Fat Unc Studios',
-	tagline: 'Making Art for the Resistance',
-	description: 'A recording space for liberal, gay, and weird artists who refuse to be silenced.',
+	tagline: 'Making Art for the Rest of Us',
+	description: 'A recording space for socially progressive, LGBTQ+, and creatively nonconforming artists who refuse to be silenced.',
 	
 	mission: {
 		title: 'Our Mission',
 		// Placeholder - user will fill this out
-		statement: 'Fat Unc Studios exists to support and amplify artists who are liberal, gay, and weird. [Add your full mission statement here about creating space for artists in the resistance and celebrating authentic, bold voices.]'
+		statement: 'Fat Unc Studios exists to support and amplify artists who are socially progressive, LGBTQ+, and creatively nonconforming. [Add your full mission statement here about creating space for artists in the resistance and celebrating authentic, bold voices.]'
 	},
 	
 	rates: [
