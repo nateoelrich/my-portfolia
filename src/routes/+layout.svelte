@@ -17,6 +17,15 @@
 	afterNavigate((navigation) => {
 		currentPath = navigation.to?.url.pathname || '/';
 	});
+
+	// Check if we're on the studio page
+	$effect(() => {
+		if (typeof window !== 'undefined') {
+			currentPath = window.location.pathname;
+		}
+	});
+
+	const isStudioPage = $derived(currentPath.startsWith('/fat-unc-studios'));
 </script>
 
 <svelte:head>
@@ -25,19 +34,25 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div class="checkerboard-bg">
-	<div class="content-max-width">
-		{#if currentPath !== '/'}
-			<Navigation {currentPath} />
-		{/if}
-    
-		<main class="font-mono" class:pt-16={currentPath !== '/'}>
-			{@render children()}
-		</main>
+{#if isStudioPage}
+	<!-- Studio page uses its own layout -->
+	{@render children()}
+{:else}
+	<!-- Regular portfolio layout -->
+	<div class="checkerboard-bg">
+		<div class="content-max-width">
+			{#if currentPath !== '/'}
+				<Navigation {currentPath} />
+			{/if}
+	    
+			<main class="font-mono" class:pt-16={currentPath !== '/'}>
+				{@render children()}
+			</main>
 
-		<Footer />
+			<Footer />
+		</div>
 	</div>
-</div>
+{/if}
 
 <style>
 	.checkerboard-bg {
