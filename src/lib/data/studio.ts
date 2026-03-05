@@ -37,10 +37,10 @@ export const studioInfo = {
 		{
 			category: 'Drums',
 			items: [
-				'Full drum kit',
-				'Cymbals',
-				'Hardware',
-				'Drum mics'
+				'Mapex Armory (22" kick, various toms)',
+				'Meinl Dual Classic cymbals(14" hi-hats, 12"/16" crash, 20" ride, 18" China)',
+				'Ludwig Universal Snare',
+				'Drum mics - all of \'em'
 			]
 		},
 		{
@@ -53,12 +53,13 @@ export const studioInfo = {
 			]
 		},
 		{
-			category: 'Amplification',
+			category: 'Strings and Amps',
 			items: [
-				'Guitar amps',
-				'Bass amps',
-				'Amp modelers',
-				'Direct boxes'
+				'Marshall MG15FX',
+				'Line6 HX Stomp',
+				'Epiphone Les Paul Special II',
+				'Epiphone SG Special VE',
+                'Ibanex Talman Bass'
 			]
 		},
 		{

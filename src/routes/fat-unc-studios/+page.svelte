@@ -468,7 +468,7 @@ Authentic over safe-for-the-algorithm.</div>
 
 	.equipment-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		grid-template-columns: repeat(2, 1fr);
 		gap: 2rem;
 	}
 
@@ -480,12 +480,12 @@ Authentic over safe-for-the-algorithm.</div>
 	}
 
 	.equipment-category {
-		font-family: var(--font-condensed);
-		font-size: 2rem;
-		font-weight: 900;
+		font-family: var(--font-body);
+		font-size: 1.75rem;
+		font-weight: 700;
 		color: var(--studio-yellow);
 		text-transform: uppercase;
-		letter-spacing: 1px;
+		letter-spacing: 1.5px;
 		margin: 0 0 1.5rem;
 		padding-bottom: 1rem;
 		border-bottom: 3px solid var(--studio-red);
